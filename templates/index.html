@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+<head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{{url_for('static',filename='style3.css')}}" />
+
+    <!-- Favicon -->
+    
+
+    <title>Novice's Predictor</title>
+
+</head>
+<body>
+<div class="img"></div>
+<form class="form"  action="{{url_for('predict_home_price')}}" method="POST">
+	
+	<h4 text-align='left' style="color:rgb(30, 129, 27);">Novice's Prediction For Crop Cultivation</h4>
+	<marquee style="color:rgb(41, 77, 55);">Enter Acurate Data For Better Result..</marquee>
+	<h3>Enter Avg. Temp Of Area In°C</h3>
+    <input required aria-required="true" class="area"  type="number" id="uiSqft" class="floatLabel" name="avgTemp"  placeholder="0.0" min="5" max="50" >
+	<br>
+	<br>
+	<h3>Enter Avg. Rainfall In mm</h3>
+	<input required aria-required="true" class="area"  type="number" id="uiRain" class="floatLabel" name="Rainfall" placeholder="00" min="50" max="1500" >
+	
+	<br>
+	<br>
+
+	<h3>Area Near Your Farm</h3>
+	<div>
+	 <select required aria-required="true" class="location" name="City" id="uiLocations">
+     <option value="" disabled="disabled" selected="selected">City Near Ur Farm </option>
+	 <option>ahmedabad</option>
+	 <option>amreli</option>
+	 <option>anand</option>	
+	 <option>banas kantha</option>	
+	 <option>bharuch</option>	
+	 <option>bhavnagar</option>	
+	 <option>dahod</option>	
+	 <option>dangs</option>	
+	 <option>gandhinagar</option>	
+	 <option>jamnagar</option>	
+	 <option>junagadh</option>	
+	 <option>kheda</option>	
+	 <option>kutch</option>	
+	 <option>mahesana</option>	
+	 <option>narmada</option>	
+	 <option>navsari</option>	
+	 <option>panchmahal</option>	
+	 <option>patan</option>	
+	 <option>porbandar</option>	
+	 <option>rajkot</option>	
+	 <option>sabarkantha</option>	
+	 <option>surat</option>	
+	 <option>surendranagar</option>	
+	 <option>vadodara</option>	
+	 <option>valsad</option>	
+	 	
+
+  </select>
+
+	
+	 <br>
+	<input class="submit"  type="submit" value="Crop"></div>
+</form>
+	
+</a>
+</body>
+</html>
