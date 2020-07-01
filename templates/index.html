@@ -18,14 +18,19 @@
     <link rel="stylesheet" href="{{url_for('static',filename='style3.css')}}" />
 
     <!-- Favicon -->
-    
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{url_for('static',filename='crop.png')}}"
+    />    
+
 
     <title>Novice's Predictor</title>
 
 </head>
 <body>
 <div class="img"></div>
-<form class="form"  action="{{url_for('predict_home_price')}}" method="POST">
+<form class="form"  action="{{url_for('predict')}}" method="POST">
 	
 	<h4 text-align='left' style="color:rgb(30, 129, 27);">Novice's Prediction For Crop Cultivation</h4>
 	<marquee style="color:rgb(41, 77, 55);">Enter Acurate Data For Better Result..</marquee>
