@@ -44,8 +44,8 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/predict_home_price', methods=["POST" ,"GET"])
-def predict_home_price():
+@app.route('/predict', methods=["POST" ,"GET"])
+def predict():
     
     if request.method == 'POST':
         input_json = {
