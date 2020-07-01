@@ -15,7 +15,7 @@ def get_estimated_price(input_json):
         loc_index = __data_columns.index(input_json['City'].lower())
     except:
         loc_index = -1
-    x = np.zeros(len(__data_columns))
+    x = np.zeros(27)
     x[0] = input_json['avgTemp']
     x[1] = input_json['Rainfall']
     if loc_index>=0:
